@@ -1,0 +1,366 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, big, em, font, img, small, strong, sub, sup, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit;  font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+:focus { outline: 0;}
+ol, ul { list-style: none;}
+table { border-collapse: separate; border-spacing: 0;}
+caption, th, td { text-align: left; font-weight: normal;}
+strong,b{font-weight:bold}
+em{font-style:italic}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+* {box-sizing: border-box}
+
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans.eot');
+    src: url('fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('fonts/OpenSans.woff2') format('woff2'),
+        url('fonts/OpenSans.woff') format('woff'),
+        url('fonts/OpenSans.ttf') format('truetype'),
+        url('fonts/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Domine';
+    src: url('fonts/Domine-Regular.eot');
+    src: url('fonts/Domine-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Domine-Regular.woff2') format('woff2'),
+        url('fonts/Domine-Regular.woff') format('woff'),
+        url('fonts/Domine-Regular.ttf') format('truetype'),
+        url('fonts/Domine-Regular.svg#Domine-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.eot');
+    src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/Montserrat-Regular.woff') format('woff'),
+        url('fonts/Montserrat-Regular.ttf') format('truetype'),
+        url('fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.clear{clear:both;}
+.base{width:100%; height:1055px;
+                           background-image:url(images/base.jpg);
+						   background-repeat:no-repeat;
+						   background-position: center 0px;
+						   background-size:100%;}
+.center{width:940px; margin:0 auto;}	
+.logo{float:left;
+	          width:140px;height:75px;
+                          background-image:url(images/freelancer.png);
+						  background-repeat:no-repeat;
+						  background-size:100%;}
+.menu{float:right;height:75px;}
+.menu #menu{}						  
+.menu li{float:left; margin-top:25px;}
+.menu li a {text-decoration:none;margin-left: 30px;
+                   font-family: 'Montserrat', sans-serif;font-size:15px;text-transform:uppercase;color:#263742;}
+.menu li a:hover{color:#fa5c65;}				  
+
+.intelligence{width:70%;float:left;margin-top: 285px;
+                           background-image:url(images/dot.png);
+						   background-repeat:no-repeat;
+						   background-position: 288px 162px;
+						   background-size:2%;}
+.intelligence a {text-decoration:none;}	
+.intelligence a :hover{color:#314a5b;}					   
+.textbase{font-family: 'Montserrat', sans-serif;font-size:50px;text-transform:uppercase;color:#314a5b;}
+.textopensans{font-family: 'Open Sans', sans-serif;font-size:20px; color:#314a5b;margin-top:25px;}
+.intelligence #read{width:170px; height:65px; 
+                       background-color:#fa5c65;
+                                border:0px;border-radius:4px; 
+								    margin-top:45px;
+									 font-family: 'Open Sans', sans-serif;font-size:21px; color:#fff;
+									     cursor:pointer;}
+
+
+.pease{width:32%;float:left;margin-bottom:30px;
+                               background-image:url(images/dot.png);
+						       background-repeat:no-repeat;
+						       background-position: 75px 60px;
+						       background-size:2%}
+.textpease{font-family: 'Montserrat', sans-serif;font-size:15px;text-transform:uppercase;color:#263742;font-weight: bold;margin-top:30px;}
+.textosafe{font-family: 'Open Sans', sans-serif;font-size:15px;line-height: 1.7; color:#9aa0ab;margin-top:25px;}
+.free{width:32%;float:left;margin-bottom:30px;
+                               background-image:url(images/dot.png);
+						       background-repeat:no-repeat;
+						       background-position: 47px 42px;
+						       background-size:2%}
+.simple{width:32%;float:right;margin-bottom:30px;
+                               background-image:url(images/dot.png);
+						       background-repeat:no-repeat;
+						       background-position: 92px 60px;
+						       background-size: 2%;
+                               }
+
+.more {width:32%; float:left;margin-bottom:30px;
+                               background-image:url(images/Arrow.png);
+						       background-repeat:no-repeat;
+						       background-position: 62px 7px;
+							   -webkit-transition: all 1s ease-out;}
+.more:hover{ -webkit-transform: scale(1.05);}
+                              
+.morelast{width:32%; float:right;margin-bottom:30px;
+                               background-image:url(images/Arrow.png);
+						       background-repeat:no-repeat;
+						       background-position: 62px 7px;
+						       -webkit-transition: all 1s ease-out; }
+.morelast:hover{ -webkit-transform: scale(1.05);}						   
+							   
+.more a{ text-decoration:none;font-family: 'Montserrat', sans-serif;text-transform:uppercase;font-size:18px;color:#fa5c65}
+.morelast a{ text-decoration:none;font-family: 'Montserrat', sans-serif;text-transform:uppercase;font-size:18px;color:#fa5c65}
+
+.mac {width:56%;height:360px; float:left;
+                               background-image:url(images/MacBook.png);
+						       background-repeat:no-repeat;}			   
+.portfolio{width:43%;height:360px; float:right;
+                               background-image:url(images/dot.png);
+						       background-repeat:no-repeat;
+						       background-position: 307px 42px;}	
+.portfolio 	.textopensans{font-family: 'Open Sans', sans-serif;font-size:15px; color:#314a5b;margin-top:5px;font-weight: bold;}	
+.portfolio .more{margin-top:18px;margin-left:15px;}
+.portfolio .textosafe {font-family: 'Open Sans', sans-serif;font-size:15px;line-height: 1.7; color:#9aa0ab;margin-top:25px;}
+
+.team{width:98%;float:left;
+                               background-image:url(images/dot.png);
+						       background-repeat:no-repeat;
+						       background-position: 205px 27px;
+						       background-size:1%}
+.textteam{font-family: 'Montserrat', sans-serif;font-size:35px;text-transform:uppercase;color:#314a5b;font-weight: bold;}
+.textoteam{font-family: 'Open Sans', sans-serif;font-size:25px; color:#9aa0ab;}
+
+.joey{width:33%; height:175px;float:left;
+                               background-image:url(images/Joey.png);
+						       background-repeat:no-repeat;
+						       background-position: left 10px;
+                               background-size:40%;-webkit-transition: all 1s ease-out;}
+.joey:hover{ -webkit-transform: scale(1.2);}							   
+					                         
+.joey .textpease{margin: 15px 0px 0px 125px;}											 
+.joey .redtext{margin: 5px 0px 0px 125px;}
+.joey .textfooterlight{margin-left: 125px;}
+
+.Matt{width:33%; height:175px;float:left;
+                               background-image:url(images/matt.png);
+						       background-repeat:no-repeat;
+						       background-position: left 10px;
+                               background-size:40%;-webkit-transition: all 1s ease-out;}
+.Matt:hover{ -webkit-transform: scale(1.2);}							   
+							   
+.Matt .textpease{margin: 15px 0px 0px 125px;}
+.Matt .redtext{margin: 5px 0px 0px 125px;}
+.Matt .textfooterlight{margin-left: 125px;}
+							   
+.Mike{width:33%; height:175px;float:left;
+                               background-image:url(images/mike.png);
+						       background-repeat:no-repeat;
+						       background-position: left 10px;
+                               background-size:40%;-webkit-transition: all 1s ease-out;}
+.Mike:hover{ -webkit-transform: scale(1.2);}
+.Mike	.textpease{margin: 15px 0px 0px 125px;}						   
+.Mike	.redtext{margin: 5px 0px 0px 125px;}						   
+.Mike	.textfooterlight{margin-left: 125px;}						   
+
+.textfooterlight{font-family: 'Open Sans', sans-serif;font-size:15px; color:#9aa0ab;}
+.redtext{font-family: 'Open Sans', sans-serif;font-size:15px; color:#f0454c;font-weight:bold;}
+
+.line{width:100%;height:60px;
+                              border-bottom:2px solid #e6eaed}
+.line .morelast{ 
+                               background-image:url(images/Arrow.png);
+						       background-repeat:no-repeat;
+						       background-position: 290px 7px;}
+.line .morelast a{float:right;  margin-right:10px;}
+
+.footer{width:100%;height:60px;border-top:2px solid #e6eaed;}
+.footlast{float:left;margin-right:20px;margin-top:15px;text-decoration:none;-webkit-transition: all 1s ease-out;}
+
+.footlast :hover{-webkit-transform: scale(1.1);}
+.footer .textfooterlight{float:right; margin-top:10px;}
+
+
+ @media screen and (max-width: 1039px) { /* 980<width<1039 main 980*/
+ .center{width: 99%;}
+ .intelligence{margin-top: 235px;}
+ .textbase{margin-left:15px;}
+ .intelligence #read{margin-left:20px;}
+ .textopensans{margin-left:20px;}
+ .base {width: 99%;height: 748px;}
+ .menu li {margin-top: 20px;}
+ 
+ .portfolio{background-position: 320px 42px;}
+ 
+.Matt { background-size: 39%;}
+.Matt .redtext {margin: 0px 0px 0px 125px;}
+.Matt .textpease {margin: 15px 0px 0px 125px;}
+ 
+ .Mike{background-size: 37%;}
+ .Mike.redtext {margin: 0px 0px 0px 125px;}
+ 
+ .line .morelast{    margin-right: 20px;background-position: 296px 7px;}
+ }
+@media screen and (max-width: 979px) { /* 768<width<979 main 768*/
+.menu li{margin-right: 30px;margin-top: 13px;}
+.menu li a{margin-left: 10px;font-size: 13px;}
+.menu	{width: 610px;float:right;}
+.menu #menu{margin-left: 105px;}
+
+.base{height: 589px;}
+.textbase{font-size: 35px;margin-left: 15px}
+.intelligence {margin-top: 130px;background-position: 195px 107px;}
+.intelligence #read{width: 164px;height: 56px;margin-left:20px;}
+.textopensans{font-size: 18px;margin-top: 20px;margin-left:15px;}
+
+.textosafe{font-size: 13px;margin-top: 15px;}
+.simple{margin-bottom: 15px;background-position: 92px 52px;}
+.textpease{margin-top: 20px;}
+.pease{margin-bottom: 15px;background-position: 77px 51px;}
+.free{margin-bottom: 15px;background-position: 44px 33px;}
+
+.mac{background-size: 98%;height: 280px;}
+.portfolio{height: 280px;background-position: 215px 23px;}
+.textbase{font-size: 33px;margin-left: 10px;}
+
+.joey	{height: 125px;}
+.joey .textfooterlight{font-size: 13px;margin-left: 111px;}
+.joey .redtext {margin: 0px 0px 0px 111px;}
+.joey .textpease {margin: 15px 0px 0px 111px;}
+.joey:hover{ -webkit-transform: scale(1.1);}
+
+.Matt {height: 125px;}
+.Matt .textfooterlight{font-size: 13px;margin-left: 111px;}
+.Matt .redtext {margin: 0px 0px 0px 111px;}
+.Matt .textpease {margin: 15px 0px 0px 111px;}
+.Matt:hover{ -webkit-transform: scale(1.1);}
+
+.Mike{height: 125px;}
+.Mike .textfooterlight{font-size: 13px;margin-left: 111px;}
+.Mike .redtext {margin: 0px 0px 0px 111px;}
+.Mike .textpease {margin: 15px 0px 0px 111px;}
+.Mike:hover{ -webkit-transform: scale(1.1);}
+
+.line .morelast{background-position: 208px 4px;background-size: 6%;}
+.line .morelast a{font-size: 16px;margin-right: 35px;}
+.footer .textfooterlight{margin-right: 15px;}
+
+
+}
+
+@media screen and (max-width: 767px) { /* 480<width<767 main 480*/
+.base{height: 368px;}
+.logo{width: 100px;height: 55px;}
+.menu	{width: 370px;height: 55px;}
+.menu #menu {margin-left: 0px;margin-right: 0px; margin-top: 0px}
+.menu li{margin-right: 10px;margin-top: 9px;}
+.menu li a{font-size: 11px;}
+
+.textbase{font-size: 25px;margin-left: 10px}
+.intelligence {margin-top: 47px;background-position: 162px 15px ;}
+.textopensans{font-size: 14px;margin-top: 10px;margin-left:10px;}
+.intelligence #read{width: 110px;height: 35px;margin-left:15px;font-size: 15px;}
+
+.textosafe{font-size: 14px;margin-top: 10px;}
+
+.textbase{font-size: 20px;margin-left:5px;}
+.mac{height: 207px;background-size: 98% 88%;}
+.portfolio{background-position: 125px 15px;background-size: 3%;height: 207px;}
+.portfolio .textopensans{font-size: 12px;margin-top: 0px;margin-left:0px;}
+.portfolio .textosafe{font-size: 12px;line-height: 1.5;margin-top: 2px;margin-right: 6px}
+.portfolio .more {background-size: 19%;background-position:49px 7px;margin-top: 10px;}
+.portfolio .more a {font-size: 15px;}
+
+.team{background-position: 150px 20px;background-size: 2%;}
+.textteam {font-size: 25px;}
+.textoteam{font-size: 15px;}
+
+.joey	{height: 115px;background-size: 45%;}
+.joey .textfooterlight{font-size: 10px;margin-left: 65px;}
+.joey .redtext {margin: 0px 0px 0px 65px;font-size: 11px;}
+.joey .textpease {margin: 15px 0px 0px 65px;font-size: 12px;}
+
+.Matt {height: 115px;background-size: 45%;}
+.Matt .textfooterlight{font-size: 10px;margin-left: 65px;}
+.Matt .redtext {margin: 0px 0px 0px 65px;font-size: 11px;}
+.Matt .textpease {margin: 15px 0px 0px 65px;font-size: 12px;}
+
+.Mike{height: 115px;background-size: 45%;}
+.Mike .textfooterlight{font-size: 10px;margin-left: 65px;}
+.Mike .redtext {margin: 0px 0px 0px 65px;font-size: 11px;}
+.Mike .textpease {margin: 15px 0px 0px 65px;font-size: 12px;}
+
+.line .morelast{background-position: 117px 5px;background-size: 9%;}
+.footer .textfooterlight {margin-right: 7px;font-size: 12px;}
+.footlast{margin-right: 15px;margin-top: 10px;}
+
+}
+
+
+@media screen and (max-width: 479px) { /* 320<width<479 main 320*/
+.base{height: 245px;}
+.logo{width: 70px;height: 45px;}
+.menu	{width: 243px;height: 45px;}
+.menu li{margin-right: 0px;margin-top: 9px;}
+.menu li a{font-size: 8px;}
+
+.textbase{font-size: 15px;margin-left: 5px}
+.intelligence {margin-top: 15px;background-position: 90px 50px;}
+.textopensans{font-size: 13px;margin-top: 7px;margin-left:10px;}
+.intelligence #read{width: 86px;height: 29px;margin-left:15px;font-size: 13px;margin-top:33px;}
+
+.textosafe{font-size: 10px;margin-top: 10px;}
+.textpease{margin-top: 10px;font-size: 11px;}
+.free{background-position: 33px 17px;background-size: 5%;margin-bottom: 5px;}
+.pease{background-position: 42px 17px;background-size: 5%;margin-bottom: 5px;}
+.simple{background-position: 68px 31px;background-size: 5%;margin-bottom: 5px;}
+.more{margin-bottom: 8px;background-position: 57px 6px;}
+.morelast{margin-bottom: 8px;background-position: 57px 6px;}
+
+.mac{height: 172px;width: 50%;margin-top: 35px;background-size: 98% 68%}
+.portfolio{width: 50%;background-position: 82px 11px;}
+.portfolio .textbase{font-size: 13px;margin-left: 0px;}
+.portfolio .textopensans{font-size: 10px;}
+.portfolio .textosafe{font-size: 11px;margin-top: 3px;margin-right: 0px;}
+.portfolio .more{margin-left: 3px;background-position: 39px 8px;margin-top: 3px;}
+.portfolio .more a{font-size: 12px;}
+
+.team{background-position: 118px 16px;background-size: 2%;}
+.textteam {font-size: 20px;}
+.textoteam{font-size: 12px;}
+
+.joey	{height: 115px;background-size: 50%;}
+.joey .textfooterlight{font-size: 8px;margin-left: 50px;}
+.joey .redtext {margin: 0px 0px 0px 50px;font-size: 10px;}
+.joey .textpease {margin: 10px 0px 0px 50px;font-size: 12px;}
+
+.Matt {height: 115px;background-size: 45%;}
+.Matt .textfooterlight{font-size: 8px;margin-left: 50px;}
+.Matt .redtext {margin: 0px 0px 0px 50px;font-size: 10px;}
+.Matt .textpease {margin: 10px 0px 0px 50px;font-size: 12px;}
+
+.Mike{height: 115px;background-size: 50%;}
+.Mike .textfooterlight{font-size: 8px;margin-left: 50px;}
+.Mike .redtext {margin: 0px 0px 0px 50px;font-size: 10px;}
+.Mike .textpease {margin: 10px 0px 0px 50px;font-size: 12px;}
+
+.line{height: 30px;}
+.line .morelast {background-position: 69px 4px;background-size: 12%;}
+.line .morelast a {font-size: 13px;}
+.footer .textfooterlight {margin-right: 4px;font-size: 10px;}
+.footlast{margin-right: 5px;margin-top: 10px;}
+}
+
+
+
+
+			   
